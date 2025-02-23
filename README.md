@@ -9,7 +9,7 @@ GasTrack is a lightweight, developer-friendly tool that profiles gas consumption
 ✅ Works locally with **Hardhat** and **Foundry** environments.  
 ✅ Simple CLI interface for easy usage.  
 ✅ Generates reports in **CLI, JSON, and HTML formats**.  
-✅ Helps identify **expensive operations** for gas optimization.  
+✅ Helps identify **expensive operations** for gas optimization >>.  
 
 ## **🛠 Installation**  
 ```sh
