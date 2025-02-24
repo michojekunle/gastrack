@@ -16,6 +16,7 @@ program
   .action(async (fileName) => {
     const filePath = path.join(process.cwd(), fileName);
 
+    // check if file exists before analyzing and throw error if not 
     if(!fs.existsSync(filePath)) {
       console.error(
         chalk.red(`Error: File ${fileName} not found in current working directory!!`)
@@ -24,6 +25,16 @@ program
       process.exit(1);
     }
 
-    
+    // show loading spinner while executing functionality
+    const spinner = ora("Analyzing..").start();
 
+    try {
+      // analyzing code functionality
+    } catch (error) {
+      console.error(
+        chalk.red(`Error: error analyzing file at ${filePath}!`)
+      );
+
+      process.exit(1);
+    }
   });
